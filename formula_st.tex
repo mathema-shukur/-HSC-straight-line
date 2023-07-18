@@ -1,0 +1,122 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage[a4paper,inner=1.5cm,outer=1.5cm,top=2cm,bottom=0.5cm]{geometry} 
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{multicol}
+\usepackage{pgfplots}
+\usepackage{contour}
+\usetikzlibrary{matrix, fit, backgrounds}
+\usepgfplotslibrary{fillbetween}
+\pgfplotsset{width=8cm,compat=1.9}
+\usetikzlibrary{intersections}
+\usetikzlibrary{intersections,calc,angles,quotes}
+\usetikzlibrary{calc,angles,positioning,intersections,quotes,decorations.markings}
+\usepackage{tkz-euclide}
+\usetikzlibrary{backgrounds}
+\usetikzlibrary{calc,through}
+\usepackage{cancel} 
+\usetikzlibrary{angles}
+\usetikzlibrary{fadings}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{shapes.symbols}
+\usepackage{draftwatermark}
+\usepackage{mathptmx}
+
+\SetWatermarkText{\textcolor{black!50}{Mathema Shukur}}
+\SetWatermarkFontSize{2 cm}
+\usepackage[utf8]{inputenc}
+\usepackage{fontspec}
+
+\setmainfont{[Kalpurush.ttf]}
+\newfontface{\en}{[Arial.ttf]} %%this is optional, if you want to use a secondary font. Any english font is supported
+\newcommand{\hl}[2]{
+	\begin{scope}[on background layer]
+		\node [fit={#1}, fill=#2,inner sep=-1pt] {};
+\end{scope}}
+
+\begin{document} 
+	\Large  
+	(1) দুইটি বিন্দু $P(x_1,y_1)$ ও $Q(x_2,y_2)$ এর মধ্যবর্তী দূরত্ব  $d=\sqrt{(x_1-x_2)^2+(y_1-y_2)^2}$\\
+	\\
+(2a)	$x$ অক্ষ হতে   $(x,y)$ বিন্দুর দূরত্ব $=|y|$ ; \quad (2b) $y$ অক্ষ হতে   $(x,y)$ বিন্দুর দূরত্ব $=|x|$ \\   
+		Section Formula\\
+	(3a)	$A(x_1,y_1)$ ও $B(x_2,y_2)$ বিন্দু দুইটির সংযোগ রেখাংশকে  $m_1: m_2$ অনুপাতে অন্তর্বিভক্তকারী (Internal) বিন্দুর স্থানাঙ্ক  $\left(\frac{m_1\,\,x_2+m_2\,\,x_1}{m_1+m_2},\frac{m_1\,\,y_2+m_2\,\,y_1}{m_1+m_2}\right)$\\
+		\\
+		(3b)	$A(x_1,y_1)$ ও $B(x_2,y_2)$ বিন্দু দুইটির সংযোগ রেখাংশকে  $m_1: m_2$ অনুপাতে বহির্বিভক্তকারী (External) বিন্দুর স্থানাঙ্ক  $\left(\frac{m_1\,\,x_2-m_2\,\,x_1}{m_1-m_2},\frac{m_1\,\,y_2-m_2\,\,y_1}{m_1-m_2}\right)$\\
+			Section Formula for Midpoint\\ 
+		(4)	$P(x_1,y_1)$ ও $Q(x_2,y_2)$ বিন্দু দুইটির সংযোগ রেখাংশের মধ্যবিন্দুর স্থানাংক $\left(\frac{x_1+x_2}{2},\frac{y_1+y_2}{2}\right)$\\
+		\\
+			(5)	$A(x_1,y_1)$ ,	$B(x_2,y_2)$ ও	$C(x_3,y_3)$ বিন্দুত্রয় দ্বারা গঠিত ত্রিভুজের ভরকেন্দ্রের স্থানাংক  $\left(\frac{x_1+x_2+x_3}{3},\frac{y_1+y_2+y_3}{3}\right)$\\
+				গণিত বিষয়ক ইউটিউব চ্যানেল \boxed{ Mathema \,\,\,\,Shukur}\\
+		(6)	$A(x_1,y_1)$ ,	$B(x_2,y_2)$ ও	$C(x_3,y_3)$ শীর্ষবিশিষ্ট $ABC$ ত্রিভুজের ক্ষেত্রফল $=\frac{1}{2}\begin{vmatrix} 
+			x_1 & y_1 & 1\\
+			x_2 & y_2 & 1\\
+			x_3 & y_3 & 1\\
+			\end{vmatrix}$ বর্গ একক । ক্ষেত্রফল শূন্য হলে বিন্দু তিনটি সমরেখ হবে \\
+		\\
+		(7a)	$x-$ অক্ষের সমীকরণ $y=0$; \quad (7b) $y-$ অক্ষের সমীকরণ $x=0$ \\
+		\\
+		(8a)	$x-$ অক্ষের সমান্তরাল বা 	$y-$ অক্ষের উপর লম্বরেখার সমীকরণ $y=b$\\
+		\\
+	(8b) $y-$ অক্ষের সমান্তরাল বা 	$x-$ অক্ষের উপর লম্বরেখার সমীকরণ $x=a$\\
+		\\
+	(9a)	$P(x_1,y_1)$ ও $Q(x_2,y_2)$ বিন্দুগামী রেখার ঢাল $=\frac{y_1-y_2}{x_1-x_2}$\\
+		\\
+	(9b) $ax+by+c=0$ রেখার ঢাল $=\frac{-a}{b}$ \\
+	\\
+			(10)	মূলবিন্দুগামী সরলরেখার সমীকরণ  $y=mx$ সরলরেখাটির ঢাল $=m$\\
+				গণিত বিষয়ক ইউটিউব চ্যানেল \boxed{ Mathema \,\,\,\,Shukur}\\
+				Slope-Intercept Form\\
+			(11)	$y-$ অক্ষকে ছেদ করে এরুপ সরলরেখার সমীকরণ $y=mx+c$ ;একে ঢাল আকার সমীকরণও বলে \\
+				\\
+				Point-Slope Form\\
+		(12)	ঢাল	$m$ এবং  $(x_1,y_1)$ বিন্দুগামী সরলরেখার সমীকরণ $y-y_1=m(x-x_1)$\\
+			\\
+			Two-Intercept Form\\
+		(13)	$x-$ অক্ষ ও $y-$ অক্ষের ছেদক রেখার সমীকরণ $\frac{x}{a}+\frac{y}{b}=1$ যেখানে $x$ ও $y$ অক্ষের ছেদিতাংশ যথাক্রমে $a$ ও $b$; রেখাটি $x-$ অক্ষকে $(a,0)$  এবং $y-$ অক্ষকে $(0,b)$  বিন্দুতে ছেদ করে \\
+			\\
+	Two Point Form	(14)	$(x_1,y_1)$ ও $(x_2,y_2)$ বিন্দুগামী সরলরেখার সমীকরণ  $\frac{y-y_1}{y_1-y_2}=\frac{x-x_1}{x_1-x_2}$\\
+			\\
+		(15)	মূলবিন্দু হতে একটি সরলরেখার ওপর অঙ্কিত লম্বের দৈর্ঘ্য $p$ এবং $x-$ অক্ষের সাথে উক্ত লম্বের উৎপন্ন কোণের পরিমাণ $\alpha$ হলে, সরলরেখার সমীকরণ $x\cos \alpha +y \sin \alpha =p$\\
+			\\
+			(16a)	$ax+by+c=0$ রেখার সমান্তরাল রেখার সমীকরণ 	$ax+by+k=0$ \\
+				\\
+				(16b)	$ax+by+c=0$  রেখার লম্ব রেখার সমীকরণ  	$bx-ay+k=0$ \\
+					\\
+			(17)	$a_1x+b_1y+c_1=0$ এবং  $a_2x+b_2y+c_2=0$ একই সরলরেখা নির্দেশ করলে  $\frac{a_1}{a_2}=\frac{b_1}{b_2}=\frac{c_1}{c_2}$\\
+				\\
+			(18)	 তিনটি সরলরেখা 	$a_1x+b_1y+c_1=0$,  $a_2x+b_2y+c_2=0$  এবং  $a_3x+b_3y+c_3=0$ সমবিন্দু হওয়ার শর্ত 
+				$\begin{vmatrix}
+					a_1&b_1&c_1\\
+					a_2&b_2&c_2\\
+					a_3&b_3&c_3
+				\end{vmatrix}=0$\\
+				\\
+			(19)	দুইটি সরলরেখা 	$a_1x+b_1y+c_1=0$ এবং  $a_2x+b_2y+c_2=0$  এর ছেদবিন্দুগামী রেখার সমীকরণ $(a_1x+b_1y+c_1)+k(a_2x+b_2y+c_2)=0;$ $k$ ইচ্ছাধীন ধ্রুবক তবে শূন্য নয় \\
+				গণিত বিষয়ক ইউটিউব চ্যানেল \boxed{ Mathema \,\,\,\,Shukur}\\
+			(20)	$y=m_1x+c_1$ এবং	$y=m_2x+c_2$ রেখাদ্বয়ের অন্তর্গত কোণ $\theta$ হলে  $\tan \theta= \pm \frac{m_1-m_2}{1+m_1m_2}$ ধনাত্মক হলে সূক্ষকোণ ও ঋণাত্মক হলে স্থূলকোণ নির্দেশ করে, যেখানে  $m_1>m_2$\\
+				\\
+			(21a)	$m_1$  ও $m_2$ ঢাল বিশিষ্ট দুইটি সরলরেখা পরস্পর সমান্তরাল হলে  $m_1=m_2$\\
+				\\
+				(21b)	$m_1$  ও $m_2$ ঢাল বিশিষ্ট দুইটি সরলরেখা পরস্পর লম্ব হলে  $m_1 \times m_2=-1$\\
+					\\
+			(22)	$P(x_1,y_1)$ বিন্দু হতে $ax+by+c=0$ সরলরেখার ওপর অঙ্কিত লম্বের দৈর্ঘ্যে বা লম্ব দূরত্ব \\
+				 $d=\frac{|ax_1+by_1+c|}{\sqrt{a^2+b^2}}$\\
+				 \\
+				(23)  $ax+by+c_1=0$ এবং $ax+by+c_2=0$ সমান্তরাল সরলরেখা দুইটির মধ্যবর্তী দূরত্ব $=\frac{|c_1-c_2|}{\sqrt{a^2+b^2}}$\\
+				 \\
+				(24)	$a_1x+b_1y+c_1=0$ এবং  $a_2x+b_2y+c_2=0$  রেখাদ্বয়ের অন্তর্ভুক্ত কোণের সমদ্বিখণ্ডকের সমীকরণ\\
+					\\ 
+				 $\frac{a_1x+b_1y+c_1}{\sqrt{a_1^2+b_1^2}}=\pm \frac{a_2x+b_2y+c_2}{\sqrt{a_2^2+b_2^2}}$\\
+				 \\
+				(i) $a_1a_2+b_1b_2>0$ হলে $(+ve)$ ধরে স্থূলকোণের সমদ্বিখণ্ডক এবং $(-ve)$ ধরে সূক্ষকোণের সমদ্বিখণ্ডক পাওয়া যাবে \\
+				\\ 
+				 (ii) $a_1a_2+b_1b_2<0$ হলে $(-ve)$ ধরে স্থূলকোণের সমদ্বিখণ্ডক এবং $(+ve)$ ধরে সূক্ষকোণের সমদ্বিখণ্ডক পাওয়া যাবে \\
+				(25) $P(x_1,y_1)$ এবং $Q(x_2,y_2)$ বিন্দুদ্বয়  $ax+by+c=0$ রেখার একই পার্শ্বে থাকলে  $ax_1+by_1+c$ এবং $ax_2+by_2+c$ একই চিহ্ন এবং বিপরীত পার্শ্বে থাকলে বিপরীত চিহ্ন বিশিষ্ট হবে । \\ 
+					গণিত বিষয়ক ইউটিউব চ্যানেল \boxed{ Mathema \,\,\,\,Shukur}\\
+				
+			 	
+\end{document}

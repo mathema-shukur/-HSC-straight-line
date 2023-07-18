@@ -1,0 +1,125 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage[a4paper,inner=1.5cm,outer=1.5cm,top=2cm,bottom=0.5cm]{geometry} 
+\usepackage{xcolor}                    
+\usepackage{tikz}                           
+\usepackage{multicol}
+\usepackage{pgfplots}
+\usetikzlibrary{calc}
+\usetikzlibrary{intersections}
+\usetikzlibrary{intersections,calc,angles,quotes}
+\usetikzlibrary{shapes,arrows,positioning,decorations.pathreplacing,calc}
+\usetikzlibrary{calc,angles,positioning,intersections,quotes,decorations.markings}
+\usepackage{tkz-euclide}
+\usetikzlibrary{backgrounds}
+\usetikzlibrary{calc,through}
+\usetikzlibrary{angles}
+\usetikzlibrary{fadings}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{shapes.symbols}
+\usepackage{draftwatermark}
+\usepackage{mathptmx}
+
+\SetWatermarkText{\textcolor{black!30}{Mathema Shukur}}
+\SetWatermarkFontSize{2 cm}
+\usepackage[utf8]{inputenc}
+\usepackage{fontspec}
+
+\setmainfont{[Kalpurush.ttf]}
+\newfontface{\en}{[Arial.ttf]} %%this is optional, if you want to use a secondary font. Any english font is supported
+\newlength\Radius
+\setlength\Radius{4cm}
+\begin{document} 
+	\Large
+	\textcolor{red}{Welcome To} 
+	\\
+	\begin{tikzpicture}
+		\tikz \node [fill=blue!20,star,star points=6,draw] {Mathema Shukur };
+	\end{tikzpicture}
+	\\
+	যাদের জন্যে প্রযোজ্যঃ  	\textcolor{magenta}{একাদশ ও দ্বাদশ শ্রেণীর শিক্ষার্থী} \\
+	বিষয়ঃ \textcolor{magenta}{উচ্চতর গণিত ১ম পত্র} \\
+	অধ্যায়ঃ \textcolor{magenta}{৩-সরলরেখা}\\ 
+	Subtopicঃ  \textcolor{magenta}{ স্থূলকোণের সমদ্বিখণ্ডক সমীকরণ নির্ণয় bisector of obtuse angle }\\
+	\\
+	\textcolor{blue}{$a_1x+b_1y+c_1=0$ এবং $a_2x+b_2y+c_2=0$ রেখাদ্বয়ের অন্তর্ভুক্ত কোণের সমদ্বিখণ্ডকের সমীকরণ \\
+		\\
+		 $\frac{a_1x+b_1y+c_1}{\sqrt{a_1^2+b_1^2}}=\pm \frac{a_2x+b_2y+c_2}{\sqrt{a_2^2+b_2^2}}$}\\
+	\\
+	\begin{tabular}{|c|c|c|}
+		\hline 
+	শর্ত	& স্থূলকোণের সমদ্বিখণ্ডক  & সূক্ষকোণের সমদ্বিখণ্ডক \\ 
+		\hline  
+$a_1\,a_2+b_1\,b_2>0$	& $\frac{a_1x+b_1y+c_1}{\sqrt{a_1^2+b_1^2}}=\textcolor{red}{+} \frac{a_2x+b_2y+c_2}{\sqrt{a_2^2+b_2^2}}$& $\frac{a_1x+b_1y+c_1}{\sqrt{a_1^2+b_1^2}}= \textcolor{red}{-} \frac{a_2x+b_2y+c_2}{\sqrt{a_2^2+b_2^2}}$\\
+	\hline 
+	$a_1\,a_2+b_1\,b_2<0$	& $\frac{a_1x+b_1y+c_1}{\sqrt{a_1^2+b_1^2}}=\textcolor{red}{-} \frac{a_2x+b_2y+c_2}{\sqrt{a_2^2+b_2^2}}$& $\frac{a_1x+b_1y+c_1}{\sqrt{a_1^2+b_1^2}}= \textcolor{red}{+} \frac{a_2x+b_2y+c_2}{\sqrt{a_2^2+b_2^2}}$\\
+	\hline 
+	\end{tabular}\\
+\\ 
+\\
+\\
+	ময়মনসিংহ   বোর্ড-২০২১\\ 
+	$3x-4y+3=0$ এবং $4x-3y+5=0$ রেখাদ্বয়ের অন্তর্গত স্থূলকোণের সমদ্বিখণ্ডকের সমীকরণ নির্ণয় কর  \\
+	\\
+	$a_1=3,\quad a_2=4,\quad b_1=-4,\quad b_2=-3$\\
+	\\
+	$a_1\,\,a_2+b_1\,\,b_2=(3)(4)+(-4)(-3)=12+12=24$\\
+	\\
+	$a_1\,\,a_2+b_1\,\,b_2>0$\\ 
+		\\
+		\begin{align*}
+		\frac{a_1x+b_1y+c_1}{\sqrt{a_1^2+b_1^2}}&=\textcolor{red}{+} \frac{a_2x+b_2y+c_2}{\sqrt{a_2^2+b_2^2}}\\
+		\\
+		\frac{3x-4y+3}{\sqrt{(3)^2+(-4)^2}}&=\textcolor{red}{+} \frac{4x-3y+5}{\sqrt{(4)^2+(-3)^2}}\\
+		\\
+		\frac{3x-4y+3}{\sqrt{25}}&=\textcolor{red}{+} \frac{4x-3y+5}{\sqrt{25}}\\
+		\\
+		3x-4y+3&=4x-3y+5\\
+		\\
+		x+y+2&=0
+		\end{align*}
+	\begin{tikzpicture}[transform shape,scale=1]
+		\draw [-latex,thick](-6,0) -- (6,0) node[right] {$x$} coordinate(x axis);
+		\draw [-latex,thick](0,-6) -- (0,6) node[above] {$y$} coordinate(y axis);
+		\fill[black] (0,0) circle (1 mm);
+		\node at (4,2) {$\textcolor{green}{3x-4y+3=0}$};		
+		\node at (3,-3) {$\textcolor{red}{x+y+2=0}$};	
+		\node at (-2,-4) {$\textcolor{blue}{4x-3y+5=0}$};	
+		\draw[very thick,green] (-5,-3)--(4.34,4);	
+		\draw[very thick,blue] (-5,-5)--(2.52,5);	
+		\draw[very thick,red,dashed] (-5,3)--(2,-4);		
+	\end{tikzpicture}
+\\
+	ঢাকা  বোর্ড-২০১৭\\ 
+$3x-4y+12=0$ এবং $8x+15y-12=0$ রেখাদ্বয়ের অন্তর্গত স্থূলকোণের সমদ্বিখণ্ডকের সমীকরণ নির্ণয় কর  \\
+\\
+	$a_1=3,\quad a_2=8,\quad b_1=-4,\quad b_2=15$\\
+\\
+$a_1\,\,a_2+b_1\,\,b_2=(3)(8)+(-4)(15)=24-60=-36$\\
+\\
+$a_1\,\,a_2+b_1\,\,b_2<0$\\ 
+\\
+\begin{align*}
+	\frac{a_1x+b_1y+c_1}{\sqrt{a_1^2+b_1^2}}&=\textcolor{red}{-} \frac{a_2x+b_2y+c_2}{\sqrt{a_2^2+b_2^2}}\\
+	\\
+	\frac{3x-4y+12}{\sqrt{(3)^2+(-4)^2}}&=\textcolor{red}{-} \frac{8x+15y-12}{\sqrt{(8)^2+(15)^2}}\\
+	\\
+	\frac{3x-4y+12}{\sqrt{25}}&=\textcolor{red}{-} \frac{8x+15y-12}{\sqrt{289}}\\
+\frac{3x-4y+12}{5}&=\textcolor{red}{-} \frac{8x+15y-12}{17}\\
+17(3x-4y+12)&=-5(8x+15y-12)\\
+91x+7y+144&=0
+\end{align*}
+\begin{tikzpicture}[transform shape,scale=1]
+	\draw [-latex,thick](-8,0) -- (7,0) node[right] {$x$} coordinate(x axis);
+	\draw [-latex,thick](0,-8) -- (0,6) node[above] {$y$} coordinate(y axis);
+	\fill[black] (0,0) circle (1 mm);
+	\node at (4,3.5) {$\textcolor{green}{3x-4y+12=0}$};		
+	\node at (-3.5,-3) {$\textcolor{red}{91x+7y+144=0}$};	
+	\node at (3,-2.5) {$\textcolor{blue}{8x+15y-12=0}$};	
+	\draw[very thick,green] (-8,-3)--(4,6);	
+	\draw[very thick,blue] (7,-2.933)--(-4,2.933);	
+	\draw[very thick,red,dashed] (-1.967,5)--(-0.967,-8);		
+\end{tikzpicture}
+\end{document}
